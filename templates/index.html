@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <title>Chatbot</title>
+  <title>VU ChatBot</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-
 <body>
   <!-- partial:index.partial.html -->
   <section class="msger">
     <header class="msger-header">
       <div class="msger-header-title">
-        <i class="fas fa-bug"></i>Virtual University Chatbot <i class="fas fa-bug"></i>
+      <!--<i class="fas fa-bug"></i> VU Chatbot <i class="fas fa-bug"></i>-->  
+        <i class="fa-solid fa-building-columns"></i> Virtual University Of Pakistan<i class="fa-solid fa-building-columns"></i>
       </div>
     </header>
 
     <main class="msger-chat">
       <div class="msg left-msg">
-        <div class="msg-img" style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"></div>
-
+        <div class="msg-img" style="background-image:url(logo.png) "></div>
         <div class="msg-bubble">
           <div class="msg-info">
-            <div class="msg-info-name">Chatbot</div>
-            <div class="msg-info-time">12:45</div>
+            <div class="msg-info-name">VU Chatbot</div>
+            <div class="msg-info-time"> 00:00</div>
           </div>
 
           <div class="msg-text">
-            Hi, welcome to ChatBot! 😄
+            Hi, welcome to VU admission ChatBot! 😄
           </div>
         </div>
       </div>
@@ -40,11 +38,11 @@
 
     <form class="msger-inputarea">
       <input type="text" class="msger-input" id="textInput" placeholder="Enter your message...">
-      <button type="submit" class="msger-send-btn">Send</button>
+      <button type="submit" class="msger-send-btn">Submit</button>
     </form>
   </section>
   <!-- partial -->
-  <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'></script>
   <script>
 
     const msgerForm = get(".msger-inputarea");
